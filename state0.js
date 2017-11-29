@@ -4,9 +4,9 @@ demo.state0 = function(){};
 demo.state0.prototype = {
     preload: function(){},
     create: function(){
-        game.stage.backgroundColor = '#35c511';
-        
+        game.stage.backgroundColor = '#35c511';    
         addChangeStateEventListeners();
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     },
     update: function(){}
 
