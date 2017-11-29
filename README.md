@@ -1,3 +1,3 @@
 # phaserDemo
 
-Udacity course
+Udemy course (free)
