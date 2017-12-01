@@ -1,8 +1,16 @@
 var text, sentence;
+WebFontConfig = {
+    google: {
+      families: ['Revalia']
+    }
+};
+
 
 demo.state8 = function(){};
 demo.state8.prototype = {
-    preload: function(){},
+    preload: function(){
+        game.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js');
+    },
     create: function(){
         game.stage.backgroundColor = '#c511b0';
         
@@ -10,7 +18,7 @@ demo.state8.prototype = {
         
         text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ';
         
-        this.spellOutText(100, 100, 1000, text, 30, 40, '#fff');
+        this.spellOutText(100, 100, 1000, text, 30, 40, '#fff', 'Revalia');
     },
     update: function(){},
     
