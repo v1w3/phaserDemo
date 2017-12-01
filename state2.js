@@ -43,8 +43,8 @@ demo.state2.prototype = {
         
         enemyGroup.setAll('anchor.y, 0.5');
         enemyGroup.setAll('anchor.x, 0.5');
-        enemyGroup.setAll('scale.x, 0.1');
-        enemyGroup.setAll('scale.y, 0.1');
+        enemyGroup.setAll('scale.y, 0.4');
+        enemyGroup.setAll('scale.x, 0.4');
 
 
 
